@@ -10,15 +10,13 @@ export default class HelloComponent extends Component {
   constructor() {
     super();
     this.greetService = Provider.resolve(GreetService);
+    this.state = {};
   }
 
   componentDidMount() {
     this.greetService.stateEvent
-    .takeWhile(() => !this._unSubAll)
-    .subscribe(name => {
-      this.name = name;
-      this.forceUpdate();
-    });
+      .takeWhile(() => !this._unSubAll)
+      .subscribe(name => this.setState({name: name}));
   }
 
   componentWillUnmount() {
@@ -26,8 +24,6 @@ export default class HelloComponent extends Component {
   }
 
   render() {
-    return (
-      <Text>Hello {this.name}</Text>
-    );
+    return <Text>Hello {this.state.name}</Text>;
   }
 }
