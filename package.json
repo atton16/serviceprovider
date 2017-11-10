@@ -1,6 +1,6 @@
 {
   "name": "serviceprovider",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "Service Provider for node.js projects",
   "main": "index.js",
   "scripts": {
