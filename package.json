@@ -3,7 +3,9 @@
   "version": "1.0.4",
   "description": "Service Provider for node.js projects",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "build": "babel src/index.js --out-file dist/index.js"
+  },
   "author": "Attawit Kittikrairit <iam@attawit.me>",
   "repository": {
     "type": "git",
@@ -11,5 +13,10 @@
   },
   "homepage": "https://github.com/atton16/serviceprovider",
   "bugs": "https://github.com/atton16/serviceprovider/issues",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.6.1"
+  }
 }
