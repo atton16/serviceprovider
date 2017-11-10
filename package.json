@@ -5,5 +5,6 @@
   "main": "index.js",
   "scripts": {},
   "author": "Attawit Kittikrairit",
+  "url" : "https://github.com/atton16/serviceprovider",
   "license": "MIT"
 }

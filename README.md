@@ -2,6 +2,15 @@
 
 Service Provider for node.js projects. Initially intended to mimick Angular's service provider pattern on React Native.
 
+## Usage
+```javascript
+// Initialize the Provider
+Provider.init(providers: array);
+
+// Resolve the service
+Provider.resolve(service: Class);
+```
+
 ## Example
 
 ### HelloComponent (hello.component.js)
