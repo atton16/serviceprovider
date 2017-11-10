@@ -34,10 +34,8 @@ import { Text } from 'react-native';
 import Provider from 'serviceprovider';
 import GreetService from './greet.service';
 
-// @flow
 export default class HelloComponent extends Component {
   _unSubAll = false;
-  greetService: GreetService;
 
   constructor() {
     super();
