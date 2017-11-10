@@ -4,8 +4,19 @@ A simple and lightweight Service Provider for node.js project.
 
 Initially intended to mimick Angular's service provider pattern on React Native.
 
+## Install
+
+```
+npm i -S serviceprovider
+```
+
 ## Usage
 ```typescript
+// Import
+const Provider = require('serviceprovider');
+// or
+import Provider from 'serviceprovider';
+
 // Initialize the Provider
 Provider.init(providers: array);
 
