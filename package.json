@@ -1,10 +1,10 @@
 {
   "name": "serviceprovider",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Service Provider for node.js projects",
   "main": "index.js",
   "scripts": {},
   "author": "Attawit Kittikrairit",
-  "url" : "https://github.com/atton16/serviceprovider",
+  "url": "https://github.com/atton16/serviceprovider",
   "license": "MIT"
 }
