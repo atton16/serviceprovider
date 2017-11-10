@@ -4,7 +4,12 @@
   "description": "Service Provider for node.js projects",
   "main": "index.js",
   "scripts": {},
-  "author": "Attawit Kittikrairit",
-  "url": "https://github.com/atton16/serviceprovider",
+  "author": "Attawit Kittikrairit <iam@attawit.me>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/atton16/serviceprovider"
+  },
+  "homepage": "https://github.com/atton16/serviceprovider",
+  "bugs": "https://github.com/atton16/serviceprovider/issues",
   "license": "MIT"
 }
