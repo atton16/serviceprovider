@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { StyleSheet, View, Text } from 'react-native';
+import { View, Text } from 'react-native';
 import Provider from 'serviceprovider';
 
 import 'rxjs/add/operator/takeWhile';
@@ -28,11 +28,8 @@ export default class HelloWorldApp extends Component {
   render() {
     return (
       <View>
-        <Text />
-        <Text />
-        <Text />
-        <Text />
-        <HelloComponent></HelloComponent>
+        <Text /><Text /><Text /><Text />
+        <HelloComponent />
       </View>
     );
   }
