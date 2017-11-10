@@ -1,7 +1,7 @@
 {
   "name": "serviceprovider",
   "version": "1.0.0",
-  "description": "Service Provider for node.js projects. Initially intended to mimick Angular's service provider pattern on React Native.",
+  "description": "Service Provider for node.js projects",
   "main": "index.js",
   "scripts": {
   },
