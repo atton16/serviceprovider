@@ -2,7 +2,7 @@
 
 A simple and lightweight Service Provider for node.js project.
 
-Initially intended to mimick Angular's service provider pattern on React Native.
+Initially intended to mimic behaviour of Angular's service provider on React Native.
 
 ## Install
 
