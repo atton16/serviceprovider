@@ -36,4 +36,20 @@ export default class Provider {
     }
     return ret;
   }
+
+  static appDidMount() {
+    const keys = Object.keys(this._services);
+    for(let i = 0; i < keys.length; i++) {
+      if (typeof this._services[keys[i]].appDidMount === 'function')
+        this._services[keys[i]].appDidMount();
+    }
+  }
+
+  static appWillUnmount() {
+    const keys = Object.keys(this._services);
+    for(let i = 0; i < keys.length; i++) {
+      if (typeof this._services[keys[i]].appWillUnmount === 'function')
+        this._services[keys[i]].appWillUnmount();
+    }
+  }
 }

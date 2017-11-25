@@ -22,6 +22,16 @@ Provider.init(providers: array);
 
 // Resolve the service
 Provider.resolve(service: Class);
+
+// Notify services that the application is mounted
+// Should be called from 'app.componentDidMount'
+// Service should implement 'appDidMount' method too support this feature.
+Provider.appDidMount();
+
+// Notify services that the application will be unmount
+// Should be called from 'app.componentWillUnmount'
+// Service should implement 'appWillUnmount' method too support this feature.
+Provider.appWillUnmount();
 ```
 
 ## Example
