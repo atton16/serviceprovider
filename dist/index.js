@@ -49,6 +49,22 @@ var Provider = function () {
       }
       return ret;
     }
+  }, {
+    key: 'appDidMount',
+    value: function appDidMount() {
+      var keys = Object.keys(this._services);
+      for (var i = 0; i < keys.length; i++) {
+        if (typeof this._services[keys[i]].appDidMount === 'function') this._services[keys[i]].appDidMount();
+      }
+    }
+  }, {
+    key: 'appWillUnmount',
+    value: function appWillUnmount() {
+      var keys = Object.keys(this._services);
+      for (var i = 0; i < keys.length; i++) {
+        if (typeof this._services[keys[i]].appWillUnmount === 'function') this._services[keys[i]].appWillUnmount();
+      }
+    }
   }]);
 
   return Provider;
