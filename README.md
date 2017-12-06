@@ -18,7 +18,7 @@ const Provider = require('serviceprovider');
 import Provider from 'serviceprovider';
 
 // Initialize the Provider
-Provider.init(providers: array);
+Provider.init(providers: array, store?: ReduxStore);
 
 // Resolve the service
 Provider.resolve(service: Class);

@@ -6,13 +6,13 @@ export default class Provider {
   // Provider instances
   static _services = {};
 
-  static init(providers = []) {
+  static init(providers = [], store = undefined) {
     if (Provider._state.init) {
       console.warn('ServiceProvider [WARINING]: init is called more than once.');
     }
     Provider._state.init = true;
     for (let i = 0; i < providers.length; i++) {
-      const inst = new providers[i]();
+      const inst = new providers[i](store);
       const name = inst.constructor.name;
       if (Provider._services[name] !== undefined) {
         console.warn(
