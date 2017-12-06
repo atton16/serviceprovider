@@ -19,13 +19,14 @@ var Provider = function () {
     // State
     value: function init() {
       var providers = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : [];
+      var store = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : undefined;
 
       if (Provider._state.init) {
         console.warn('ServiceProvider [WARINING]: init is called more than once.');
       }
       Provider._state.init = true;
       for (var i = 0; i < providers.length; i++) {
-        var inst = new providers[i]();
+        var inst = new providers[i](store);
         var name = inst.constructor.name;
         if (Provider._services[name] !== undefined) {
           console.warn('ServiceProvider [WARINING]: Service with name \'' + name + '\' is already in the provider list.');
