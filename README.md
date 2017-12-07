@@ -34,6 +34,23 @@ Provider.appDidMount();
 Provider.appWillUnmount();
 ```
 
+## Dependency Injection and Redux Store
+The dependency will be automatically injected via `constructor` for each service if the service define `static deps` array. If redux store is passed from calling `Provider.init`, it will also pass along the constructor of every service.
+
+example
+```
+import ServiceB from './service.b';
+import ServiceC from './service.c';
+class ServiceA {
+  static deps = [ServiceB, ServiceC];
+
+  constructor(store, deps) {
+    this.serviceB = deps[0];
+    this.serviceC = deps[1];
+  }
+}
+```
+
 ## Example
 
 ### HelloComponent (hello.component.js)
