@@ -12,7 +12,7 @@ This will crash the app and I cannot seem to find the cause of the problem.
 
 However, no problem arises during development.
 
-The plugin should be working fine on other platform / configuration / purpose.
+The package should be working fine on other platform / configuration / purpose.
 
 ## Install
 
@@ -21,7 +21,7 @@ npm i -S serviceprovider
 ```
 
 ## Usage
-```typescript
+```jsx
 // Import
 const Provider = require('serviceprovider');
 // or
@@ -45,10 +45,12 @@ Provider.appWillUnmount();
 ```
 
 ## Dependency Injection and Redux Store
-The dependency will be automatically injected via `constructor` for each service if the service define `static deps` array. If redux store is passed from calling `Provider.init`, it will also pass along the constructor of every service.
+The dependency will be automatically injected via `constructor` for each service if the service define `static deps` array.
 
-example
-```
+If redux store is passed from calling `Provider.init`, it will also pass along the constructor of every service.
+
+### Sample service with dependency
+```jsx
 import ServiceB from './service.b';
 import ServiceC from './service.c';
 class ServiceA {
