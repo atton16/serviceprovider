@@ -4,6 +4,16 @@ A simple and lightweight Service Provider for node.js project.
 
 Initially intended to mimic behaviour of Angular's service provider on React Native.
 
+## NOTICE
+
+It appears building `react-native` app for `production` does not work well with service with dependency.
+
+This will crash the app and I cannot seem to find the cause of the problem.
+
+However, no problem arises during development.
+
+The plugin should be working fine on other platform / configuration / purpose.
+
 ## Install
 
 ```
