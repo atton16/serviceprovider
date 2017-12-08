@@ -65,7 +65,7 @@ class ServiceA {
 
 ## Live Demo
 
-Visi Expo Snack [here](https://snack.expo.io/SykiZlu-M)
+Visit Expo Snack [here](https://snack.expo.io/SykiZlu-M)
 
 ## Short Demo
 ![Example Result](https://github.com/atton16/serviceprovider/raw/master/doc/example-react-native-result.gif)
